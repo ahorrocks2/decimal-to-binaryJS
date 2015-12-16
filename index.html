@@ -1,13 +1,19 @@
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Binary Bases</title>
   </head>
   <body>
     <h1>Enter a number:</h1>
 
     <form>
-      <input type="text" name="numEntry" placeholder="Number">
-      <button id="enterBtn">Go</button>
+      <input type="text" id="numEntry" placeholder="Number"/>
+      <button type="submit" id="goButton">Go</button>
     </form>
+
+    <hr>
+
+    <h1><span id="result"></span></h1>
   </body>
 </html>

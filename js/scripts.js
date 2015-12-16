@@ -1,6 +1,4 @@
 function binaryConverter(num) {
-  num = parseInt(num);
-
   var binaryResult = [];
   var remainder;
   var quotient;
@@ -22,3 +20,16 @@ function binaryConverter(num) {
 
   return parseInt(binaryResult.reverse().join(""));
 }
+
+
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    var input = parseInt($('#numEntry').val());
+    var result = binaryConverter(input);
+
+    $('#result').text(result);
+    $('#result').show();
+    event.preventDefault();
+  });
+
+});
